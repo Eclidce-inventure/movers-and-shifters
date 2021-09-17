@@ -999,9 +999,11 @@ hr {
     margin-left: auto;
     margin-right: 85px; }
 
-.cs-page__head.cs-style1 {
-  height: 500px;
-  background: linear-gradient(90deg, #021b79 0%, #0575e6 99%); }
+    .cs-page__head.cs-style1 {
+      height: 163px;
+      background: linear-gradient(
+  90deg, #FFFFFF 0%,#FFFFFF 99%);
+  }
   .cs-page__head.cs-style1 .cs-page__head__in {
     padding-top: 60px; }
   .cs-page__head.cs-style1 .cs-page__head__title {
@@ -5795,5 +5797,7 @@ ul.page-numbers {
   .cs-video__block.cs-style1 {
     max-width: 480px;
     margin: auto; } }
+
+
 
 /*# sourceMappingURL=style.css.map */
