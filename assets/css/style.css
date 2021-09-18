@@ -5801,3 +5801,16 @@ ul.page-numbers {
 
 
 /*# sourceMappingURL=style.css.map */
+
+#err-msg{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#gif{
+  display:none;
+}
