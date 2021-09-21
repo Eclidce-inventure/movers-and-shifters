@@ -207,7 +207,8 @@
 								<div class="cs-text__box__subtitle">About Us</div>
 								<h2 class="cs-text__box__title">Move anything at anytime as per your needs</h2>
 								<div class="cs-height__25 cs-height__lg__25"></div>
-								<div class="cs-text__box__text">We provide professional packing and moving services and take care of all types of residential moves, commercial moves, local moves, interstate moves, and long distance moves.</div>
+								<div class="cs-text__box__text">We provide professional packing and moving services and take care of all types of residential moves, commercial moves, local moves, interstate moves, and long distance moves. We are the top rated and 2 Years Experienced Packers and Movers  offering moving services at affordable price. We one of the top moving company offering the best house shifting services all over India. 
+                </div>
 								<div class="cs-height__20 cs-height__lg__20"></div> <a href="about.html" class="cs-btn cs-style2 cs-type1 cs-primary__font">About us <i
                     class="fas fa-long-arrow-alt-right"></i></a>
 							</div>
@@ -234,7 +235,7 @@
 							<div class="cs-text__box__subtitle">Why Choose Us</div>
 							<h2 class="cs-text__box__title">Easy and fast moving services exactly what you want</h2>
 							<div class="cs-height__25 cs-height__lg__25"></div>
-							<div class="cs-text__box__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis etc. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</div>
+							<div class="cs-text__box__text"> We ensure a proper quality move with an affordable cost.  We keep your personal details and information safe and secure and only use  them to process based on your request.Our Moving Price is highly affordable for any type of relocation services. Our Staff dedicated to offer high quality packers movers cochin services as per your requirement.Provide Packing, Loading, Transportation, and Unloading.</div>
 							<div class="cs-height__20 cs-height__lg__20"></div> <a href="service.html" class="cs-btn cs-style2 cs-type1 cs-primary__font">See Services <i
                   class="fas fa-long-arrow-alt-right"></i></a>
 						</div>
@@ -253,23 +254,21 @@
 		</div>
 	</div>
 	<!-- End About Section -->
+	
 	<div class="cs-height__130 cs-height__lg__70"></div>
 	<!-- Start Form -->
 	<!-- Start Form -->
+	<h5 id="err-msg"></h5>
 	<div class="cs-fixed__bg" data-src="assets/img/movers/form-bg.jpg" data-overlay="0.9">
 		<div class="container">
 			<div class="cs-height__120 cs-height__lg__70"></div>
-			<form action="#" method="POST" class="cs-form cs-style3">
+			<form action="#" method="POST" id="pform" class="cs-form cs-style3">
 				<h2 class="cs-text__box__title text-center">Let’s start moving with us !</h2>
-				<input type="hidden" name="apikey" value="ad46cf8b-0835-4d54-b2df-4afef89b0729">
-				<!-- Optional: Can be type="hidden" or type="text" for subject -->
-				<input type="hidden" name="subject" value="Submission from Lala Template">
-				<!-- If javascript, use "window.location.hash" for redirects -->
-				<input type="hidden" name="redirect">
+				
 				<!-- Main Form Field -->
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">
-						<input type="text" placeholder="Moving From" style="text-align: center;border: none; border-radius: 3%;height: 3.2rem;">
+						<input type="text" placeholder="Moving From" name="from" style="text-align: center;border: none; border-radius: 3%;height: 3.2rem;">
 						<!-- <select name="moving-from" class="cs-select" data-placeholder="Moving Form" required> -->
 						<!-- <option></option> -->
 						<!-- <option value="Florida">Moving Form</option>
@@ -282,7 +281,7 @@
 						<div class="cs-height__30 cs-height__lg__15"></div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<input type="text" placeholder="Moving To" style="text-align: center;border: none; border-radius: 3%;height: 3.2rem;">
+						<input type="text" placeholder="Moving To" name="to" style="text-align: center;border: none; border-radius: 3%;height: 3.2rem;">
 						<!-- <select name="moving-to" class="cs-select" data-placeholder="Moving To" required> -->
 						<!-- <option></option> -->
 						<!-- <option value="Iowa">Moving To</option>
@@ -296,12 +295,12 @@
 					</div>
 					<div class="col-lg-3 col-sm-6">
 						<div class="cs-icon__form__field">
-							<input name="date" class="cs-form__field" type="text" id="udate" placeholder="Date" required> <i class="far fa-calendar-alt"></i>
+							<input name="date" class="cs-form__field" type="text" id="udate" placeholder="Date" name="date" required> <i class="far fa-calendar-alt"></i>
 						</div>
 						<div class="cs-height__30 cs-height__lg__15"></div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<input type="text" placeholder="Mobile Number" style="text-align: center;border: none; border-radius: 3%;height: 3.2rem;">
+						<input type="text" placeholder="Mobile Number" id="mobile" style="text-align: center;border: none; border-radius: 3%;height: 3.2rem;">
 					</div>
 					<!-- <select name="size" class="cs-select" data-placeholder="Size" required> -->
 					<!-- <option></option> -->
@@ -315,7 +314,7 @@
 				</div>
 				<div class="col-lg-4 offset-lg-4">
 					<div class="cs-height__50 cs-height__lg__0"></div>
-					<button type="submit" class="cs-btn cs-style1 cs-no__border cs-color7 cs-primary__font w-100 cs-rounded__btn">Connect with us</button>
+					<button type="submit" class="cs-btn cs-style1 cs-no__border cs-color7 cs-primary__font w-100 cs-rounded__btn" id="moving-sub">Connect with us</button>
 				</div>
 		</div>
 		</form>
@@ -541,7 +540,7 @@
 											<div class="cs-testimonial cs-style1">
 												<div class="cs-testimonial__info">
 													<div class="cs-testimonial__avatar">
-														<img src="assets/img/agency/testimonial1.jpg" alt="">
+														<img src="assets/img/movers/testimonial1.jpg" alt="">
 													</div>
 													<div class="cs-testimonial__meta">
 														<h3 class="cs-testimonial__avatar_name">Dhony Anthony</h3>
@@ -557,7 +556,7 @@
 											<div class="cs-testimonial cs-style1">
 												<div class="cs-testimonial__info">
 													<div class="cs-testimonial__avatar">
-														<img src="assets/img/agency/testimonial2.jpg" alt="">
+														<img src="assets/img/movers/testimonial2.jpg" alt="">
 													</div>
 													<div class="cs-testimonial__meta">
 														<h3 class="cs-testimonial__avatar_name">Charles Wilson</h3>
@@ -573,7 +572,7 @@
 											<div class="cs-testimonial cs-style1">
 												<div class="cs-testimonial__info">
 													<div class="cs-testimonial__avatar">
-														<img src="assets/img/agency/testimonial3.jpg" alt="">
+														<img src="assets/img/movers/testimonial3.jpg" alt="">
 													</div>
 													<div class="cs-testimonial__meta">
 														<h3 class="cs-testimonial__avatar_name">Christopher Williams</h3>
@@ -711,7 +710,7 @@
 						<h2 class="cs-widget__title">Contact Info</h2>
 						<ul>
 							<li><i class="fas fa-map-marker-alt"></i>Meentharakal (H), Kunnatheri, Thaikattukara</li>
-							<li><i class="fas fa-envelope"></i>insurance@gmail.com</li>
+							<li><i class="fas fa-envelope"></i>for4client@gmail.com</li>
 							<li><i class="fas fa-headset"></i>+91 9778404826</li>
 							<li><i class="fas fa-headset"></i>+91 9778402417</li>
 						</ul>

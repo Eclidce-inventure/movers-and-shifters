@@ -671,7 +671,7 @@ $("#gform").on("submit", (e) => {
   $("#gif").show();
   e.preventDefault();
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzw9GN75TlPK8_IULxPqifBW-zyfcTgkvFN8in1Je1bX74AllDijVSmMcHnE_8S677k/exec",
+    url: "https://script.google.com/macros/s/AKfycbwtSVbZwtUmY46KPBH4Ou8Q05kuotQixC7qR8RkqcyoqXF1oi-IlNS7a9eKXx9Dr0cq/exec",
     type: "post",
     data: $("#gform").serialize(),
     success: (response) => {
@@ -689,3 +689,25 @@ $("#gform").on("submit", (e) => {
     },
   });
 });
+
+
+$('#pform').on('submit',(e)=>{
+  e.preventDefault()
+  console.log('button clicked')
+  console.log($("#pform").serialize())
+
+  e.preventDefault();
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbyaXeHutqaZR6u-ZsYiQuEQwqfCYlrsQaHPP1nks77iuH7Bz6cU8ZmYw6q7fnATY-TTIA/exec",
+    type: "post",
+    data: $("#pform").serialize(),
+    success: (response) => {
+      
+       
+        $("#err-msg").html("Message send success").css("color", "green");
+        $("#err-msg").delay(1000).hide(0);
+        e.target.reset();
+   
+    },
+  });
+})
