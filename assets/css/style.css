@@ -4175,7 +4175,9 @@ a.cs-demo__box.cs-style1:hover {
 
 .cs-hero.cs-style5 {
   height: 780px;
-  padding-top: 120px; }
+  padding-top: 120px; 
+background-color: #dbe7f2;
+border-bottom: 1px solid #bccfe8;}
   .cs-hero.cs-style5 .cs-hero__img {
     position: absolute;
     top: 50%;
